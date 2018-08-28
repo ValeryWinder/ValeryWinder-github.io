@@ -1,0 +1,173 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	&.ishome
+		.site-header
+			min-height: 700px
+			height: 100vh
+			background-color: #151515
+			color: #fff
+			.top-line
+				padding-top: 10px
+				position: absolute
+				width: 100%
+				height: 120px
+				z-index: 1
+				background-color: white
+
+
+.logo
+img
+	width: 125px
+	height: 100px
+	margin-left: 35px
+
+section, header
+	position: relative
+	background-size: cover
+	background-position: center
+	background-color: #fff
+
+
+.menu
+	position: absolute
+	left: 200px
+	top: 30px
+	white-space: nowrap
+	a
+		text-decoration: none
+		color: black
+		float: left
+		margin: 20px
+		text-transform: uppercase
+		font-weight: 300
+		font-size: 12px
+		
+.garant-text
+	position: absolute
+	left: 230px
+	top: 215px
+	font-weight: bold
+	.gtp
+		font-size: 36px
+		line-height: 0.4em
+	.green
+		text-transform: uppercase
+		color: RGB(30, 222 , 62)
+		font-size: 36px
+		line-height: 0.6em
+		span
+			color: RGB(30, 222 , 62)
+			text-transform: lowercase
+			
+
+	.secondtext
+		padding-top: 1px
+
+.detal
+	position: absolute
+	left: 230px
+	top: 585px
+	width: 180px
+	height: 50px
+	background-size: cover
+
+.hdoor
+	text-align: center
+	font-size: 38px
+	line-height: 0.4em
+	color: black
+	font-weight: bold
+
+.line
+	width: 70px
+	height: 5px
+	background-color: RGB(115, 101 , 88)
+	margin: auto
+
+
+
+.pros
+	text-align: center
+	float: left
+	margin-left: 150px
+	margin-top: 100px
+	h3
+		text-align: center
+		color: black
+	p
+		text-align: center
+	.pros-img
+	 img
+		margin: auto
+		width: 55px
+		height: 55px
+
+section
+	&.s-catalog
+		background-color: RGB(241, 241 , 241)
+
+.catalog-text
+	margin: auto
+	font-size: 38px
+	color: black
+	font-weight: bold
+
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+
+@import "media" // Всегда в конце
